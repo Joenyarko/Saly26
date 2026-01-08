@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Q&A — #SALY26</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Great+Vibes&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .faq-container{ max-width:800px; margin:30px auto; }
+    .faq-item{ background:rgba(204,85,0,0.08); border:1px solid rgba(204,85,0,0.2); border-radius:8px; margin-bottom:16px; overflow:hidden; }
+    .faq-question{ padding:20px; cursor:pointer; display:flex; justify-content:space-between; align-items:center; background:rgba(204,85,0,0.05); transition:background 0.3s ease; }
+    .faq-question:hover{ background:rgba(204,85,0,0.12); }
+    .faq-question h3{ color:var(--burnt-orange); font-size:1.1rem; margin:0; flex:1; }
+    .faq-toggle{ color:var(--burnt-orange); font-size:1.3rem; transition:transform 0.3s ease; }
+    .faq-item.active .faq-toggle{ transform:rotate(180deg); }
+    .faq-answer{ display:none; padding:20px; padding-top:0; color:rgba(255,255,255,0.9); line-height:1.8; }
+    .faq-item.active .faq-answer{ display:block; animation:fadeIn 0.3s ease; }
+    @keyframes fadeIn{ from{ opacity:0; } to{ opacity:1; } }
+    .faq-category{ margin-bottom:40px; }
+    .faq-category h2{ margin-bottom:20px; }
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <a class="page-logo" href="index.html">#SALY26</a>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="page-tabs">
+      <!-- <a href="get-to-know-us.html">Get to Know Us</a> -->
+      <!-- <a href="album.html">Gallery</a> -->
+      <a href="program.html">Program</a>
+      <a href="venue.html">Venue</a>
+      <a href="rsvp.html">RSVP</a>
+      <a href="faq.html" class="active">Q&A</a>
+      <a href="gifts.html">Gifts</a>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-slideshow">
+      <div class="hero-slide hero-slide-1 active"></div>
+      <div class="hero-slide hero-slide-2"></div>
+      <div class="hero-slide hero-slide-3"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="couple-names">Questions?</h1>
+      <p class="wedding-date">Answers to your most asked questions</p>
+    </div>
+  </section>
+
+  <main class="page-content center">
+    <section id="faq">
+      <div class="faq-container">
+        <div class="faq-category">
+          <h2 class="section-title">General Questions</h2>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>When and where is the wedding?</h3>
+              <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>Samuel and Lydia are getting married on <strong>19th February 2026</strong>. The ceremony begins at <strong>10:00 am</strong>. Strictly by invitation.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What time should guests be seated for the ceremony?</h3>
+              <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>Guests should kindly be seated latest by exactly <strong>10:00 am</strong>. We are starting at the exact time. <strong>(NO AFRICAN TIME PLEASE)</strong>. Don't miss out on any beautiful moment of our great day!</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What are the guidelines for photography during the event?</h3>
+              <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>While personal snapshots are encouraged, professional photographers will also capture each memorable moment. No personal shots should be taken by the hired Photographers.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Are there parking provisions available for guests?</h3>
+              <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, guests can enjoy ample complimentary parking conveniently located on-site.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>REMINDERS</h3>
+              <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>Though it is a joyful occasion, excessive expression such as "Ayeforo Dondoo" are not encouraged at this occasion.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Who should guests contact for any inquiries about the wedding?</h3>
+              <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>For any inquiries, please reach out to:<br><strong>Nii Addo</strong> - 0244940339<br><strong>Lyan</strong> - 0540411155</p>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+  <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', function() {
+        const item = this.closest('.faq-item');
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
+
+
